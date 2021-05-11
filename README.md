@@ -1,3 +1,9 @@
+# Brief about the project
+Bookstore app lists down all the books in the db. The details for an individual book can also be seen. 
+
+The main focus was in developing the front end. The back end is just to support the end to end flow of the project.
+Login credentials(mentioned below) are hard coded for accepting only one user for now.
+
 # To run the app
 1. Start the springboot application
    a). open path upto pom.xml file in terminal
@@ -5,7 +11,12 @@
    c). run command> mvn spring-boot:run
    To check if the app ran successfully or not, try running any of the GET calls in any rest service testing tool  
 2. Start the react app react js
-
+    Note : node and npm should be pre-installed before moving to the step a)
+    a). open path upto 'src/main/webapp/reactjs' in terminal
+    b). run command> npm install
+    c). run command> npm start
+    Once the app opens in browser, it can be explored.
+    
 # Credentials
 
 	{
@@ -49,13 +60,8 @@
     }
 
    
-
 # Future enhancements possible
 1. JWT can be used for authentication
-2. Menu for adding a book
-3. Registration page for new users
-4. In memory DB can be used
-5. Exceptional handling can be done - Optional can be used wherever null is being returned
-6. Pagination
-7. Adding a book
-8. Updating a book
+2. DB can be used
+3. Pagination
+4. Adding unit test cases for both front and back end
